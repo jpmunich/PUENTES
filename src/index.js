@@ -1,3 +1,4 @@
-import { createNav } from "./home";
+import { createNav, createInfoRow } from "./home";
 
 createNav();
+createInfoRow();
