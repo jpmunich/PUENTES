@@ -56,7 +56,7 @@ const createNav = () => {
 
   const heading = createElement("h1", overlay);
   heading.innerText =
-    "Striving to uplift and support communities in Latin America";
+    "Striving to uplift and support communities throughout Latin America";
 };
 
 export { createNav };
