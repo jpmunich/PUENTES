@@ -42,6 +42,7 @@ const createNav = () => {
   createTextElement("p", infoContainer, "About Us");
   createTextElement("p", infoContainer, "What we do");
   createTextElement("p", infoContainer, "Fundraisers");
+  createTextElement("p", infoContainer, "Get Involved");
   createImage(
     "../dist/images/instagram.svg",
     callToActionContainer,
