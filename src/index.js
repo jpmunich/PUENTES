@@ -1,4 +1,3 @@
-import { createNav, createInfoRow } from "./home";
+import { createWebsite } from "./home";
 
-createNav();
-createInfoRow();
+createWebsite();

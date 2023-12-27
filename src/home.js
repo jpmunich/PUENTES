@@ -7,6 +7,12 @@ import {
 
 const content = document.getElementById("content");
 
+const createWebsite = () => {
+  createNav();
+  createInfoRow();
+  createGuatemalaRow();
+};
+
 const createNav = () => {
   const headerContainer = createElementWithClass(
     "div",
@@ -56,9 +62,16 @@ const createNav = () => {
   );
   callToActionButton.innerText = "Call to Action";
 
-  const heading = createElement("h1", overlay);
+  const heading = createElementWithClass("h1", overlay, "page-heading");
   heading.innerText =
     "Connecting students to support education across the globe!";
+
+  const informationAboutTheImage = createElementWithClass(
+    "p",
+    overlay,
+    "information-about-header-img"
+  );
+  informationAboutTheImage.innerText = "Santa Lucía, Guatemala";
 };
 
 const createInfoRow = () => {
@@ -79,9 +92,44 @@ const createInfoRow = () => {
   );
 
   pLeft.innerText =
-    'PUENTES, which stands for Promoting Education and Empowerment Nobly Through Education and Service, aims to "Build bridges" between our community here in Zionsville and those in Latin America through a hands-on approach.';
+    'PUENTES, which stands for Promoting Unity and Empowerment Nobly Through Education and Service, aims to "Build bridges" between our community here in Zionsville and those in Latin America through a hands-on approach.';
   pRight.innerText =
     "PUENTES, formerly Operation: Honduras, began in February 2023 in an attempt to provide extra support for communities in Honduras. However, as the 2022-2023 school year came to a close, a new leaf was turned for the club and it expanded to include all of Latin America.";
 };
 
-export { createNav, createInfoRow };
+const createGuatemalaRow = () => {
+  const guatemalaContainer = createElementWithClass(
+    "div",
+    content,
+    "guatemala-container"
+  );
+  const guatemalaContainerLeft = createElementWithClass(
+    "div",
+    guatemalaContainer,
+    "guatemala-container-left"
+  );
+  const guatemalaContainerRight = createElementWithClass(
+    "div",
+    guatemalaContainer,
+    "guatemala-container-right"
+  );
+  const guatemalaHeader = createElementWithClass(
+    "h1",
+    guatemalaContainerLeft,
+    "guatemala-header"
+  );
+  guatemalaHeader.innerText = "Come with us to Guatemala!";
+  const guatemalaCallToAction = createElementWithClass(
+    "button",
+    guatemalaContainerLeft,
+    "guatemala-button"
+  );
+  guatemalaCallToAction.innerText = "Call to Action";
+  const guatemalaImage = createImage(
+    "../dist/images/guatemala-landscape.jpg",
+    guatemalaContainerRight,
+    "guatemala-img"
+  );
+};
+
+export { createWebsite };
