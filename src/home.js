@@ -76,19 +76,31 @@ const createNav = () => {
 };
 
 const createInfoRow = () => {
-  const infoContainer = createElementWithClass(
+  const infoSectionContainer = createElementWithClass(
     "div",
     content,
     "info-section-container"
   );
+  const infoHeading = createElementWithClass(
+    "h1",
+    infoSectionContainer,
+    "info-section-header"
+  );
+  infoHeading.innerText = "About Our Club";
+  const infoSubheaderContainer = createElementWithClass(
+    "div",
+    infoSectionContainer,
+    "info-subheading-container"
+  );
+
   const pLeft = createElementWithClass(
     "p",
-    infoContainer,
+    infoSubheaderContainer,
     "info-section-p-left"
   );
   const pRight = createElementWithClass(
     "p",
-    infoContainer,
+    infoSubheaderContainer,
     "info-section-p-right"
   );
 
