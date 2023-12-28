@@ -153,6 +153,27 @@ const createEggMyYardRow = () => {
     eggMyYardContainer,
     "egg-my-yard-overlay"
   );
+
+  const eggMyYardHeader = createElementWithClass(
+    "h1",
+    overlay,
+    "egg-my-yard-header"
+  );
+  const eggMyYardSubheader = createElementWithClass(
+    "h3",
+    overlay,
+    "egg-my-yard-subheader"
+  );
+  eggMyYardSubheader.innerText =
+    "Help support our mission by participating in our annual egg my yard Easter event. For this event, we will hide eggs for you in your front or backyard for Easter. If you are interested or simply want to help, you may either decide to purchase eggs for us to hide for you or help us by donating any spare eggs or candy you may have, thank you!";
+  eggMyYardHeader.innerText = "Egg My Yard!";
+
+  const eggMyYardCallToAction = createElementWithClass(
+    "button",
+    overlay,
+    "egg-my-yard-button"
+  );
+  eggMyYardCallToAction.innerText = "Call to Action";
 };
 
 const createFooter = () => {
@@ -161,6 +182,47 @@ const createFooter = () => {
     content,
     "footer-container"
   );
+
+  const clubNameContainer = createElementWithClass(
+    "div",
+    footerContainer,
+    "footer-club-name-container"
+  );
+
+  const clubInfoContainer = createElementWithClass(
+    "div",
+    footerContainer,
+    "footer-club-info-container"
+  );
+
+  const clubCallToActionContainer = createElementWithClass(
+    "div",
+    footerContainer,
+    "footer-club-call-to-action-container"
+  );
+  createTextElement("h2", clubNameContainer, "PUENTES");
+  createTextElement(
+    "p",
+    clubNameContainer,
+    "Zionsville Community High School Club"
+  );
+  createTextElement("p", clubNameContainer, "Email: ophonduras00@gmail.com");
+  createTextElement("p", clubNameContainer, "Instagram: @operation_honduras");
+  createTextElement("h2", clubInfoContainer, "Get Involved!");
+  createTextElement("p", clubInfoContainer, "Egg My Yard");
+  createTextElement("p", clubInfoContainer, "Guatemala");
+
+  createImage(
+    "../dist/images/footer-instagram.svg",
+    clubCallToActionContainer,
+    "footer-instagram-link"
+  );
+  const callToActionButton = createElementWithClass(
+    "button",
+    clubCallToActionContainer,
+    "footer-call-to-action-button"
+  );
+  callToActionButton.innerText = "Call to Action";
 };
 
 export { createWebsite };
