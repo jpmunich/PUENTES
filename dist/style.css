@@ -83,6 +83,7 @@ h2 {
   right: 0;
   position: absolute;
 }
+
 .info-section-container {
   background-color: rgb(226, 226, 226);
   display: flex;
@@ -109,6 +110,11 @@ h2 {
   font-size: clamp(5vw, 2.2rem, 3rem);
 }
 
+.guatemala-subheader {
+  padding: 3vw 5vw 3.2vw 5.2vw;
+  font-size: clamp(1.5vw, 0.8rem, 1.6rem);
+}
+
 .guatemala-button {
   padding: 1.6em 2.5em;
   color: whitesmoke;
@@ -120,15 +126,33 @@ h2 {
 
 .guatemala-container-left {
   background-color: rgb(255, 255, 255);
-  width: 60%;
+  width: 55%;
 }
 
 .guatemala-container-right {
-  width: 40%;
+  width: 45%;
 }
 
 .guatemala-img {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.egg-my-yard-container {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+}
+
+.egg-my-yard-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+}
+
+.footer-container {
+  background-color: rgb(187, 169, 87);
+  width: 100%;
+  height: 300px;
 }
