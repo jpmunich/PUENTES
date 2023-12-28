@@ -206,7 +206,11 @@ const createFooter = () => {
     clubNameContainer,
     "Zionsville Community High School Club"
   );
-  createTextElement("p", clubNameContainer, "Email: ophonduras00@gmail.com");
+  createTextElement(
+    "p",
+    clubNameContainer,
+    "Email: operationhonduras00@gmail.com"
+  );
   createTextElement("p", clubNameContainer, "Instagram: @operation_honduras");
   createTextElement("h2", clubInfoContainer, "Get Involved!");
   createTextElement("p", clubInfoContainer, "Egg My Yard");
