@@ -11,6 +11,8 @@ const createWebsite = () => {
   createNav();
   createInfoRow();
   createGuatemalaRow();
+  createEggMyYardRow();
+  createFooter();
 };
 
 const createNav = () => {
@@ -21,7 +23,6 @@ const createNav = () => {
   );
   headerContainer.style.backgroundImage =
     "url(../dist/images/santa-lucia-landscape.jpg)";
-
   const overlay = createElementWithClass("div", headerContainer, "overlay");
 
   const navContainer = createElementWithClass("div", overlay, "nav-container");
@@ -124,11 +125,41 @@ const createGuatemalaRow = () => {
     guatemalaContainerLeft,
     "guatemala-button"
   );
+
+  const guatemalaSubheader = createElementWithClass(
+    "h4",
+    guatemalaContainerLeft,
+    "guatemala-subheader"
+  );
+  guatemalaSubheader.innerText =
+    "This summer (June 11-19 2024) we will journey to Tecpán, Guatemala where club members will perform hands on activities to help educate and improve conditions at a school. Whether or not you or your child has an interest in going, feel free to take a look at extra information as this trip is our main focus and where most future proceeds will be heading.";
   guatemalaCallToAction.innerText = "Call to Action";
   const guatemalaImage = createImage(
     "../dist/images/guatemala-landscape.jpg",
     guatemalaContainerRight,
     "guatemala-img"
+  );
+};
+
+const createEggMyYardRow = () => {
+  const eggMyYardContainer = createElementWithClass(
+    "div",
+    content,
+    "egg-my-yard-container"
+  );
+  eggMyYardContainer.style.backgroundImage = "url(../dist/images/easter.jpg)";
+  const overlay = createElementWithClass(
+    "div",
+    eggMyYardContainer,
+    "egg-my-yard-overlay"
+  );
+};
+
+const createFooter = () => {
+  const footerContainer = createElementWithClass(
+    "div",
+    content,
+    "footer-container"
   );
 };
 
