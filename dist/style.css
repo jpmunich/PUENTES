@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Merriweather";
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -39,10 +40,31 @@
   width: 20%;
 }
 
+.drop-down-container {
+  position: absolute;
+  padding: 12px;
+  top: 52px;
+  width: 200px;
+  background-color: rgb(51, 51, 51);
+}
+
 h2 {
   color: rgb(221, 201, 109);
   font-size: 1.8rem;
   font-family: "Rubik Lines";
+}
+
+.get-involved-link {
+  color: whitesmoke;
+}
+
+.get-involved-link:hover {
+  color: rgb(177, 177, 177);
+}
+
+.instagram-link-container {
+  display: flex;
+  align-items: center;
 }
 
 .info-container {
@@ -85,6 +107,7 @@ h2 {
 }
 
 .info-section-container {
+  min-height: 400px;
   background-color: rgb(226, 226, 226);
 }
 
@@ -99,18 +122,19 @@ h2 {
 
 .info-section-p-left {
   font-weight: 700;
-  font-size: 1.4rem;
-  padding: 0 48px 100px 48px;
+  font-size: clamp(1.9vw, 1rem, 1.6rem);
+  padding: 0 48px 60px 48px;
   width: 55%;
 }
 
 .info-section-p-right {
-  font-size: 1rem;
-  padding: 0 48px 100px 48px;
+  font-size: clamp(1.5vw, 0.8rem, 1.6rem);
+  padding: 0 48px 60px 48px;
   width: 45%;
 }
 
 .guatemala-container {
+  min-height: 550px;
   display: flex;
 }
 
@@ -120,8 +144,7 @@ h2 {
 }
 
 .guatemala-subheader {
-  padding: 1.5vw 5vw 72px 5.2vw;
-  font-size: clamp(1.5vw, 0.8rem, 1.6rem);
+  padding: 1.5vw 5vw 36px 5.2vw;
 }
 
 .guatemala-button {
@@ -129,7 +152,7 @@ h2 {
   color: whitesmoke;
   background-color: black;
   border: none;
-  font-size: clamp(1.5vw, 0.9rem, 1.5rem);
+  font-size: clamp(1.4vw, 0.7rem, 1.4rem);
   margin: 3vw 0 2.2vw 5.2vw;
 }
 
