@@ -46,19 +46,51 @@ const createNav = () => {
   );
 
   createTextElement("h2", headingContainer, "PUENTES");
-  createTextElement("p", infoContainer, "About Us");
-  createTextElement("p", infoContainer, "What we do");
-  createTextElement("p", infoContainer, "Donate");
-  createTextElement("p", infoContainer, "Fundraisers");
-  createTextElement("p", infoContainer, "Get Involved");
-  createImage(
-    "../dist/images/instagram.svg",
+  const aboutUs = createTextElement("p", infoContainer, "About Us");
+  aboutUs.onclick = () => scroll(0, 650);
+  const guatemalaTrip = createTextElement("p", infoContainer, "Guatemala Trip");
+  guatemalaTrip.onclick = () => scroll(0, 1050);
+  const eggMyYard = createTextElement("p", infoContainer, "Egg My Yard");
+  eggMyYard.onclick = () => scroll(0, 1600);
+  const fundraisers = createTextElement("p", infoContainer, "Fundraisers");
+  fundraisers.addEventListener("mouseover", () => {
+    const container = createElementWithClass(
+      "div",
+      fundraisers,
+      "drop-down-container"
+    );
+    const fundraiser = createElementWithClass(
+      "p",
+      container,
+      "drop-down-fundraiser"
+    );
+    fundraiser.innerText = "Egg My Yard";
+  });
+  fundraisers.addEventListener("mouseout", () => {
+    document.getElementsByClassName("drop-down-container")[0].remove();
+  });
+
+  const getInvolved = createTextElement("a", infoContainer, "Get Involved");
+  getInvolved.classList.add("get-involved-link");
+  getInvolved.href =
+    "https://www.remind.com/classes/-puentes/messages/stream/7966b1ef-ef1b-4bed-8f6f-5e4bab9d472d";
+
+  const instagramHref = createElementWithClass(
+    "a",
     callToActionContainer,
+    "instagram-link-container"
+  );
+  instagramHref.href = "https://www.instagram.com/operation_honduras/";
+  const instagramLogo = createImage(
+    "../dist/images/instagram.svg",
+    instagramHref,
     "instagram-link"
   );
+
+  const callToActionButtonHref = createElement("a", callToActionContainer);
   const callToActionButton = createElementWithClass(
     "button",
-    callToActionContainer,
+    callToActionButtonHref,
     "call-to-action-button"
   );
   callToActionButton.innerText = "Call to Action";
@@ -145,7 +177,7 @@ const createGuatemalaRow = () => {
   );
   guatemalaSubheader.innerText =
     "This summer (June 11-19 2024) we will journey to Tecpán, Guatemala where club members will perform hands on activities to help educate and improve conditions at a school. Whether or not you or your child has an interest in going, feel free to take a look at extra information as this trip is our main focus and where most future proceeds will be heading.";
-  guatemalaCallToAction.innerText = "Call to Action";
+  guatemalaCallToAction.innerText = "More Information + Registration";
   const guatemalaImage = createImage(
     "../dist/images/guatemala-landscape.jpg",
     guatemalaContainerRight,
@@ -185,7 +217,7 @@ const createEggMyYardRow = () => {
     overlay,
     "egg-my-yard-button"
   );
-  eggMyYardCallToAction.innerText = "Call to Action";
+  eggMyYardCallToAction.innerText = "Learn More!";
 };
 
 const createFooter = () => {
