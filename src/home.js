@@ -70,7 +70,7 @@ const createNav = () => {
     document.getElementsByClassName("drop-down-container")[0].remove();
   });
 
-  const getInvolved = createTextElement("a", infoContainer, "Get Involved");
+  const getInvolved = createTextElement("a", infoContainer, "Join Us!");
   getInvolved.classList.add("get-involved-link");
   getInvolved.href =
     "https://www.remind.com/classes/-puentes/messages/stream/7966b1ef-ef1b-4bed-8f6f-5e4bab9d472d";
@@ -88,12 +88,14 @@ const createNav = () => {
   );
 
   const callToActionButtonHref = createElement("a", callToActionContainer);
+  callToActionButtonHref.href =
+    "https://docs.google.com/document/d/1MoSapSPeUArUORrXeHIWBNWUv8ySw93V21bUsWmrZLw/edit?usp=sharing";
   const callToActionButton = createElementWithClass(
     "button",
     callToActionButtonHref,
     "call-to-action-button"
   );
-  callToActionButton.innerText = "Call to Action";
+  callToActionButton.innerText = "View Schedule";
 
   const heading = createElementWithClass("h1", overlay, "page-heading");
   heading.innerText =
@@ -164,11 +166,19 @@ const createGuatemalaRow = () => {
     "guatemala-header"
   );
   guatemalaHeader.innerText = "Come with us to Guatemala!";
+  const guatemalaCallToActionContainer = createElementWithClass(
+    "a",
+    guatemalaContainerLeft,
+    "guatemala-button-container"
+  );
+  guatemalaCallToActionContainer.href =
+    "https://globalbrigades-6044591.hs-sites.com/squadsabroad-zionsvillehs-june2024";
   const guatemalaCallToAction = createElementWithClass(
     "button",
-    guatemalaContainerLeft,
+    guatemalaCallToActionContainer,
     "guatemala-button"
   );
+  guatemalaCallToAction.innerText = "More Information + Registration";
 
   const guatemalaSubheader = createElementWithClass(
     "h4",
@@ -177,7 +187,7 @@ const createGuatemalaRow = () => {
   );
   guatemalaSubheader.innerText =
     "This summer (June 11-19 2024) we will journey to Tecpán, Guatemala where club members will perform hands on activities to help educate and improve conditions at a school. Whether or not you or your child has an interest in going, feel free to take a look at extra information as this trip is our main focus and where most future proceeds will be heading.";
-  guatemalaCallToAction.innerText = "More Information + Registration";
+
   const guatemalaImage = createImage(
     "../dist/images/guatemala-landscape.jpg",
     guatemalaContainerRight,
@@ -212,9 +222,17 @@ const createEggMyYardRow = () => {
     "Help support our mission by participating in our annual egg my yard Easter event. For this event, we will hide eggs for you in your front or backyard for Easter. If you are interested or simply want to help, you may either decide to purchase eggs for us to hide for you or help us by donating any spare eggs or candy you may have, thank you!";
   eggMyYardHeader.innerText = "Egg My Yard!";
 
+  const eggMyYardCallToActionContainer = createElementWithClass(
+    "a",
+    overlay,
+    "egg-my-yard-button-container"
+  );
+  eggMyYardCallToActionContainer.href =
+    "https://drive.google.com/file/d/1qQkQT53g71iu8nARUvCtUMpn0sevyfgC/view?usp=sharing";
+
   const eggMyYardCallToAction = createElementWithClass(
     "button",
-    overlay,
+    eggMyYardCallToActionContainer,
     "egg-my-yard-button"
   );
   eggMyYardCallToAction.innerText = "Learn More!";
@@ -260,17 +278,27 @@ const createFooter = () => {
   createTextElement("p", clubInfoContainer, "Egg My Yard");
   createTextElement("p", clubInfoContainer, "Guatemala");
 
-  createImage(
-    "../dist/images/footer-instagram.svg",
+  const footerInstagramHref = createElementWithClass(
+    "a",
     clubCallToActionContainer,
+    "footer-instagram-link-container"
+  );
+  footerInstagramHref.href = "https://www.instagram.com/operation_honduras/";
+  const footerInstagramLogo = createImage(
+    "../dist/images/footer-instagram.svg",
+    footerInstagramHref,
     "footer-instagram-link"
   );
+
+  const callToActionButtonHref = createElement("a", clubCallToActionContainer);
+  callToActionButtonHref.href =
+    "https://docs.google.com/document/d/1MoSapSPeUArUORrXeHIWBNWUv8ySw93V21bUsWmrZLw/edit?usp=sharing";
   const callToActionButton = createElementWithClass(
     "button",
-    clubCallToActionContainer,
+    callToActionButtonHref,
     "footer-call-to-action-button"
   );
-  callToActionButton.innerText = "Call to Action";
+  callToActionButton.innerText = "View Schedule";
 };
 
 export { createWebsite };
