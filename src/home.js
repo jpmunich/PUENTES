@@ -52,23 +52,10 @@ const createNav = () => {
   guatemalaTrip.onclick = () => scroll(0, 1050);
   const eggMyYard = createTextElement("p", infoContainer, "Egg My Yard");
   eggMyYard.onclick = () => scroll(0, 1600);
-  const fundraisers = createTextElement("p", infoContainer, "Fundraisers");
-  fundraisers.addEventListener("mouseover", () => {
-    const container = createElementWithClass(
-      "div",
-      fundraisers,
-      "drop-down-container"
-    );
-    const fundraiser = createElementWithClass(
-      "p",
-      container,
-      "drop-down-fundraiser"
-    );
-    fundraiser.innerText = "Egg My Yard";
-  });
-  fundraisers.addEventListener("mouseout", () => {
-    document.getElementsByClassName("drop-down-container")[0].remove();
-  });
+  const orderEggs = createTextElement("a", infoContainer, "Order Eggs");
+  orderEggs.href =
+    "https://docs.google.com/forms/d/1mjzHbJaVVKpJjErBr-_7MtKxp1hYCZ1vLXDxTB96RiA/edit";
+  orderEggs.classList.add("get-involved-link");
 
   const getInvolved = createTextElement("a", infoContainer, "Join Us!");
   getInvolved.classList.add("get-involved-link");
