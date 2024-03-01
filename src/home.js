@@ -80,7 +80,7 @@ const createNav = () => {
     callToActionContainer,
     "instagram-link-container"
   );
-  instagramHref.href = "https://www.instagram.com/operation_honduras/";
+  instagramHref.href = "https://www.instagram.com/zchs_puentes/";
   const instagramLogo = createImage(
     "../dist/images/instagram.svg",
     instagramHref,
@@ -330,7 +330,7 @@ const createFooter = () => {
     clubCallToActionContainer,
     "footer-instagram-link-container"
   );
-  footerInstagramHref.href = "https://www.instagram.com/operation_honduras/";
+  footerInstagramHref.href = "https://www.instagram.com/zchs_puentes/";
   const footerInstagramLogo = createImage(
     "../dist/images/footer-instagram.svg",
     footerInstagramHref,
