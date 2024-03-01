@@ -145,6 +145,53 @@ const createInfoRow = () => {
 };
 
 const createGuatemalaRow = () => {
+  /* This part is only for when the screen width gets thin
+  Not for the part when it is wide */
+
+  const thinScreenGuatemalaContainer = createElementWithClass(
+    "div",
+    content,
+    "thin-guatemala-container"
+  );
+  const thinScreenGuatemalaOverlay = createElementWithClass(
+    "div",
+    thinScreenGuatemalaContainer,
+    "thin-guatemala-overlay"
+  );
+
+  const thinScreenGuatemalaHeader = createElementWithClass(
+    "h1",
+    thinScreenGuatemalaOverlay,
+    "thin-guatemala-header"
+  );
+
+  thinScreenGuatemalaHeader.innerText = "Come with us to Guatemala!";
+
+  const thinScreenGuatemalaSubheader = createElementWithClass(
+    "h4",
+    thinScreenGuatemalaOverlay,
+    "thin-guatemala-subheader"
+  );
+  thinScreenGuatemalaSubheader.innerText =
+    "This summer (June 11-19 2024) we will journey to Tecpán, Guatemala where club members will perform hands on activities to help educate and improve conditions at a school. Whether or not you or your child has an interest in going, feel free to take a look at extra information as this trip is our main focus and where most future proceeds will be heading.";
+
+  const thinScreenGuatemalaCallToActionContainer = createElementWithClass(
+    "a",
+    thinScreenGuatemalaOverlay,
+    "guatemala-button-container"
+  );
+  thinScreenGuatemalaCallToActionContainer.href =
+    "https://globalbrigades-6044591.hs-sites.com/squadsabroad-zionsvillehs-june2024";
+  const thinScreenGuatemalaCallToAction = createElementWithClass(
+    "button",
+    thinScreenGuatemalaCallToActionContainer,
+    "thin-guatemala-button"
+  );
+  thinScreenGuatemalaCallToAction.innerText = "More Information + Registration";
+
+  /* Wide Screen Part!
+  Not for thin screen */
+
   const guatemalaContainer = createElementWithClass(
     "div",
     content,

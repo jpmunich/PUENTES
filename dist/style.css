@@ -267,10 +267,6 @@ h2 {
 }
 
 @media (max-width: 800px) {
-  .call-to-action-button {
-    background: rebeccapurple;
-  }
-
   .info-container > p,
   .info-container > a {
     display: none;
@@ -288,9 +284,10 @@ h2 {
   }
 }
 
-.thin-guatemala-container {
-  width: 100px;
+.thin-guatemala-overlay {
+  display: none;
 }
+
 @media (max-width: 650px) {
   .info-section-header {
     padding: 1em;
@@ -309,5 +306,110 @@ h2 {
 
   .info-subheading-container {
     display: block;
+  }
+
+  .thin-guatemala-container {
+    background-image: url("../dist/images/guatemala-landscape.jpg");
+    background-size: cover;
+  }
+
+  .thin-guatemala-overlay {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .thin-guatemala-header {
+    padding: 64px 5vw 0.2vw 5.2vw;
+    font-size: clamp(2rem, 2.5vw, 3rem);
+    color: whitesmoke;
+  }
+
+  .guatemala-container {
+    display: none;
+  }
+
+  .thin-guatemala-button {
+    padding: 1.6em 2.5em;
+    color: whitesmoke;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    font-size: clamp(1.4vw, 0.7rem, 1.4rem);
+    margin: 3vw 0 48px 5.2vw;
+  }
+
+  .thin-guatemala-subheader {
+    color: whitesmoke;
+    padding: 24px 5vw 36px 5.2vw;
+    font-size: clamp(1.4vw, 0.9rem, 1.4rem);
+  }
+
+  .egg-my-yard-subheader {
+    font-size: clamp(1.8vw, 1rem, 1.8rem);
+    padding: 3vw 5vw 0.2vw 5.2vw;
+    width: 100%;
+  }
+
+  .egg-my-yard-header {
+    font-size: clamp(5vw, 2.2rem, 3rem);
+    padding: 48px 5vw 0.2vw 5.2vw;
+  }
+
+  .egg-my-yard-button {
+    margin: 3vw 5vw 48px 5.2vw;
+  }
+
+  .footer-container {
+    background-color: rgb(14, 26, 43);
+    padding: 20px 30px 20px 30px;
+    width: 100%;
+    display: block;
+  }
+
+  .footer-club-name-container {
+    width: 100%;
+  }
+
+  .footer-club-info-container {
+    width: 100%;
+  }
+
+  .footer-club-call-to-action-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 3.5vw;
+    margin-top: 20px;
+  }
+
+  .footer-call-to-action-button {
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: clamp(1.1vw, 0.6rem, 1.2rem);
+    background-color: rgb(187, 169, 87);
+    padding: 2em 4em;
+    border: none;
+  }
+
+  .footer-container > * {
+    color: whitesmoke;
+  }
+
+  .footer-club-name-container > p,
+  .footer-club-info-container > p {
+    font-size: clamp(0.7rem, 2.4vw, 2rem);
+    padding-bottom: 1px;
+  }
+
+  .footer-club-name-container > h2,
+  .footer-club-info-container > h2 {
+    font-size: clamp(2.6vw, 1.6rem, 2.5rem);
+    padding: 5px 0px 8px 0;
+  }
+
+  .footer-instagram-link {
+    height: 10vw;
   }
 }
