@@ -19,7 +19,7 @@
     o = document.getElementById("content");
   (() => {
     const i = a("div", o, "header-container");
-    i.style.backgroundImage = "url(./ images/santa-lucia-landscape.jpg)";
+    i.style.backgroundImage = "url(./images/santa-lucia-landscape.jpg)";
     const r = a("div", i, "overlay"),
       s = a("div", r, "nav-container"),
       c = a("div", s, "heading-container"),
