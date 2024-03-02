@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Lines&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather";
+  scroll-behavior: smooth;
+}
+
+:root {
+  --header-height: 650px;
+}
+
+.header-container {
+  width: 100%;
+  height: var(--header-height);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: whitesmoke;
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px 35px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: var(--header-height);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.heading-container {
+  width: 20%;
+}
+
+.drop-down-container {
+  position: absolute;
+  padding: 12px;
+  top: 52px;
+  width: 200px;
+  background-color: rgb(51, 51, 51);
+}
+
+h2 {
+  color: rgb(221, 201, 109);
+  font-size: 1.8rem;
+  font-family: "Rubik Lines";
+}
+
+.get-involved-link {
+  color: whitesmoke;
+}
+
+.get-involved-link:hover {
+  color: rgb(177, 177, 177);
+}
+
+.instagram-link-container {
+  display: flex;
+  align-items: center;
+}
+
+.info-container {
+  gap: 16px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.info-container > p,
+.info-container > a {
+  font-size: clamp(0.8px, 1.5vw, 1.2rem);
+}
+
+.action-container {
+  gap: 20px;
+  width: 20%;
+  display: flex;
+  justify-content: end;
+}
+
+.call-to-action-button {
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: clamp(0.5rem, 1.6vw, 0.9rem);
+  background-color: rgb(187, 169, 87);
+  padding: 1.2em 2em;
+  border: none;
+}
+
+.page-heading {
+  font-size: clamp(5vw, 2.4rem, 3.2rem);
+  text-align: center;
+  padding: 3em;
+  height: calc(var(--header-height) - 150px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.information-about-header-img {
+  font-size: 0.7rem;
+  padding: 8px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+.info-section-container {
+  min-height: 400px;
+  background-color: rgb(226, 226, 226);
+}
+
+.info-section-header {
+  font-size: clamp(4vw, 2rem, 2.4rem);
+  padding: 1.5em 1.25em 1.5em 1.25em;
+}
+
+.info-subheading-container {
+  display: flex;
+}
+
+.info-section-p-left {
+  font-weight: 700;
+  font-size: clamp(1.9vw, 1.2rem, 1.6rem);
+  padding: 0 48px 60px 48px;
+  width: 55%;
+}
+
+.info-section-p-right {
+  font-size: clamp(1.5vw, 1rem, 1.6rem);
+  padding: 0 48px 60px 48px;
+  width: 45%;
+}
+
+.guatemala-container {
+  min-height: 550px;
+  display: flex;
+}
+
+.guatemala-header {
+  padding: 64px 5vw 0.2vw 5.2vw;
+  font-size: clamp(5vw, 2.2rem, 3rem);
+}
+
+.guatemala-subheader {
+  padding: 1.5vw 5vw 36px 5.2vw;
+}
+
+.guatemala-button {
+  padding: 1.6em 2.5em;
+  color: whitesmoke;
+  background-color: black;
+  border: none;
+  font-size: clamp(1.4vw, 0.7rem, 1.4rem);
+  margin: 3vw 0 2.2vw 5.2vw;
+}
+
+.guatemala-container-left {
+  background-color: rgb(255, 255, 255);
+  width: 55%;
+}
+
+.guatemala-container-right {
+  width: 45%;
+}
+
+.guatemala-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.egg-my-yard-container {
+  width: 100%;
+  background-size: cover;
+}
+
+.egg-my-yard-overlay {
+  background-color: rgba(0, 0, 0, 0.45);
+  height: 100%;
+  width: 100%;
+}
+
+.egg-my-yard-header {
+  font-size: clamp(5vw, 2.2rem, 3rem);
+  padding: 84px 5vw 0.2vw 5.2vw;
+}
+
+.egg-my-yard-subheader {
+  font-size: clamp(1.8vw, 1rem, 1.8rem);
+  padding: 3vw 5vw 0.2vw 5.2vw;
+  width: 90%;
+}
+
+.egg-my-yard-header,
+.egg-my-yard-subheader {
+  color: whitesmoke;
+}
+
+.egg-my-yard-button {
+  color: whitesmoke;
+  font-weight: 700;
+  background: transparent;
+  border: 5px solid white;
+  border-radius: 2px;
+  padding: 1.6em 2.5em;
+  margin: 3vw 5vw 108px 5.2vw;
+  font-size: clamp(1.5vw, 0.9rem, 1.5rem);
+}
+
+.footer-container {
+  padding: 30px 30px 40px 30px;
+  background-color: rgb(14, 26, 43);
+  width: 100%;
+  display: flex;
+}
+
+.footer-club-name-container {
+  width: 40%;
+}
+
+.footer-club-info-container {
+  width: 30%;
+}
+
+.footer-club-call-to-action-container {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 3.5vw;
+}
+
+.footer-call-to-action-button {
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: clamp(1.1vw, 0.6rem, 1.2rem);
+  background-color: rgb(187, 169, 87);
+  padding: 1.6em 2.5em;
+  border: none;
+}
+
+.footer-container > * {
+  color: whitesmoke;
+}
+
+.footer-club-name-container > p,
+.footer-club-info-container > p {
+  font-size: clamp(1.4vw, 0.7rem, 1.6rem);
+}
+
+.footer-club-name-container > h2,
+.footer-club-info-container > h2 {
+  font-size: clamp(2.6vw, 1.5rem, 2.5rem);
+}
+
+.footer-instagram-link {
+  height: 6vw;
+}
+
+@media (max-width: 800px) {
+  .info-container > p {
+    display: none;
+  }
+
+  .get-involved-link-button {
+    display: none;
+  }
+
+  .info-container > a {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .instagram-link {
+    display: none;
+  }
+
+  .nav-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 7.5px 20px;
+  }
+
+  .page-heading {
+    padding: 2.5em;
+  }
+}
+
+@media (max-width: 490px) {
+  .info-container > a {
+    font-size: 0.85rem;
+    margin-left: 36px;
+  }
+}
+
+.thin-guatemala-overlay {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .info-section-header {
+    padding: 1em;
+  }
+
+  .info-section-p-left,
+  .info-section-p-right {
+    width: auto;
+    text-align: center;
+    padding: 0 3em 2em 3em;
+  }
+
+  .info-section-container {
+    min-height: 350px;
+  }
+
+  .info-subheading-container {
+    display: block;
+  }
+
+  .thin-guatemala-container {
+    background-image: url("../dist/images/guatemala-landscape.jpg");
+    background-size: cover;
+  }
+
+  .thin-guatemala-overlay {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .thin-guatemala-header {
+    padding: 64px 5vw 0.2vw 5.2vw;
+    font-size: clamp(2rem, 2.5vw, 3rem);
+    color: whitesmoke;
+  }
+
+  .guatemala-container {
+    display: none;
+  }
+
+  .thin-guatemala-button {
+    padding: 1.6em 2.5em;
+    color: whitesmoke;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    font-size: clamp(1.4vw, 0.7rem, 1.4rem);
+    margin: 3vw 0 48px 5.2vw;
+  }
+
+  .thin-guatemala-subheader {
+    color: whitesmoke;
+    padding: 24px 5vw 36px 5.2vw;
+    font-size: clamp(1.4vw, 0.9rem, 1.4rem);
+  }
+
+  .egg-my-yard-subheader {
+    font-size: clamp(1.4vw, 0.9rem, 1.4rem);
+    padding: 3vw 5vw 0.2vw 5.2vw;
+    width: 100%;
+  }
+
+  .egg-my-yard-header {
+    font-size: clamp(5vw, 2.2rem, 3rem);
+    padding: 48px 5vw 0.2vw 5.2vw;
+  }
+
+  .egg-my-yard-button {
+    margin: 5vw 5vw 32px 5.2vw;
+  }
+
+  .footer-container {
+    background-color: rgb(14, 26, 43);
+    padding: 20px 30px 20px 30px;
+    width: 100%;
+    display: block;
+  }
+
+  .footer-club-name-container {
+    width: 100%;
+  }
+
+  .footer-club-info-container {
+    width: 100%;
+  }
+
+  .footer-club-call-to-action-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 3.5vw;
+    margin-top: 20px;
+  }
+
+  .footer-call-to-action-button {
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: clamp(1.1vw, 0.6rem, 1.2rem);
+    background-color: rgb(187, 169, 87);
+    padding: 2em 4em;
+    border: none;
+  }
+
+  .footer-container > * {
+    color: whitesmoke;
+  }
+
+  .footer-club-name-container > p,
+  .footer-club-info-container > p {
+    font-size: clamp(0.7rem, 2.4vw, 2rem);
+    padding-bottom: 1px;
+  }
+
+  .footer-club-name-container > h2,
+  .footer-club-info-container > h2 {
+    font-size: clamp(2.6vw, 1.6rem, 2.5rem);
+    padding: 5px 0px 8px 0;
+  }
+
+  .footer-instagram-link {
+    height: 10vw;
+  }
+}
