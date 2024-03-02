@@ -56,9 +56,11 @@ const createNav = () => {
   orderEggs.href =
     "https://docs.google.com/forms/d/1mjzHbJaVVKpJjErBr-_7MtKxp1hYCZ1vLXDxTB96RiA/edit";
   orderEggs.classList.add("get-involved-link");
+  orderEggs.classList.add("order-eggs-button");
 
   const getInvolved = createTextElement("a", infoContainer, "Join Us!");
   getInvolved.classList.add("get-involved-link");
+  getInvolved.classList.add("get-involved-link-button");
   getInvolved.href =
     "https://www.remind.com/classes/-puentes/messages/stream/7966b1ef-ef1b-4bed-8f6f-5e4bab9d472d";
 

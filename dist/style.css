@@ -267,8 +267,20 @@ h2 {
 }
 
 @media (max-width: 800px) {
-  .info-container > p,
+  .info-container > p {
+    display: none;
+  }
+
+  .get-involved-link-button {
+    display: none;
+  }
+
   .info-container > a {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .instagram-link {
     display: none;
   }
 
@@ -281,6 +293,13 @@ h2 {
 
   .page-heading {
     padding: 2.5em;
+  }
+}
+
+@media (max-width: 490px) {
+  .info-container > a {
+    font-size: 0.85rem;
+    margin-left: 36px;
   }
 }
 
