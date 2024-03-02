@@ -328,7 +328,7 @@ h2 {
   }
 
   .thin-guatemala-container {
-    background-image: url("../dist/images/guatemala-landscape.jpg");
+    background-image: url("./images/guatemala-landscape.jpg");
     background-size: cover;
   }
 
