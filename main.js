@@ -97,7 +97,7 @@
         (n.innerText = "Egg My Yard!");
       const i = a("a", t, "egg-my-yard-button-container");
       (i.href =
-        "https://drive.google.com/drive/folders/1rIbF7WeBivmYXHNwyiT_6GzKOK3acbZ3"),
+        "https://drive.google.com/file/d/1TBhtZaOBTypix-Lhl5QOt1ZXrNqmb-QG/view?usp=sharing"),
         (a("button", i, "egg-my-yard-button").innerText = "Learn More!");
     })(),
     (() => {
