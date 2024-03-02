@@ -300,7 +300,11 @@ h2 {
 @media (max-width: 490px) {
   .info-container > a {
     font-size: 0.85rem;
-    margin-left: 36px;
+    margin-left: 10px;
+  }
+
+  .heading-container > h2 {
+    font-size: 1.2rem;
   }
 }
 
